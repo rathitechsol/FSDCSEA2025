@@ -1,0 +1,30 @@
+/* h1,h2,h3{
+    background-color: brown;
+    color: white;
+} */
+
+/* div>p{
+    background-color: #12ec0a;
+    color: aliceblue;
+} */
+
+/* div p{
+    background-color: #3325aa;
+    color: beige;
+} */
+
+/* div+p{
+    background-color: #395004;
+    color: yellow;
+} */
+
+/* div~p{
+    background-color: #ec0909;
+    color: white;
+} */
+
+/* p:nth-child(2){
+it will give style to second child of div if p is the second child 
+} */
+
+/* p:nth-of-type(2) it selects the second p in div */
