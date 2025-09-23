@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <style>
+body {
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto 0 auto;
+    padding: 32px 28px 24px 28px;
+    border-radius: 10px;
+}
+form label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    color: #333;
+}
+input[type="text"], select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    margin-top: 18px;
+    width: 100%;
+    padding: 10px 0;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+#resume {
+    margin-top: 32px;
+    display: none;
+}
+
+#resume h2 {
+    margin-top: 0;
+    color: #1976d2;
+}
+
+#resume p, #resume ul {
+    margin: 8px 0;
+}
+
+#resume ul {
+    padding-left: 20px;
+}
+skills-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.skills-group label {
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+
+
+button[type="submit"]:hover {
+    background: #125ea7;
+}
+
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="event.preventDefault(); generateResume();">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+
+            <label for="branch">Branch:</label>
+             <select id="branch" required>
+                <option value="">Select branch</option>
+                <option value="CSE">CSE</option>
+                <option value="ME">ME </option>
+                <option value="DS">DS</option>
+                <option value="AIML">AIML</option>
+            </select>
+
+            <label>Skills:</label>
+            <div class="skills-group">
+                <label><input type="checkbox" name="skills" value="webdev"> web dev</label>
+                <label><input type="checkbox" name="skills" value="appdev"> app dev</label>
+                <label><input type="checkbox" name="skills" value="gamedev"> game dev</label>
+                <label><input type="checkbox" name="skills" value="dsa"> dsa</label>
+            </div>
+
+            <label for="university">University:</label>
+            <input type="text" id="university" required />
+
+            <label for="language">Language:</label>
+            <select id="language" required>
+                <option value="">Select language</option>
+                <option value="c++">c++</option>
+                <option value="python">python</option>
+                <option value="javascript">javascript</option>
+                <option value="java">java</option>
+            </select>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resume" class="container">
+        <h2>Resume</h2>
+        <p><strong>Name:</strong> <span id="resName"></span></p>
+        <p><strong>Branch:</strong> <span id="resBranch"></span></p>
+        <p><strong>University:</strong> <span id="resUniversity"></span></p>
+        <p><strong>Languages:</strong> <span id="resLanguage"></span></p>
+        <p><strong>Skills:</strong></p>
+        <ul id="resSkills"></ul>
+    </div>--!>
+    <script src="index.js"></script>
+</body>
+
+</html>
