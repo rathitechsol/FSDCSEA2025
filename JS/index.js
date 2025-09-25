@@ -32,21 +32,21 @@
 
 // setTimeout(function(){console.log("Hellooo")},1000)
 
-function setLanguage(lang="java"){
-    let data;
-    if(lang=="java"){
-        function javaC(){
-            return "java compiler is running..."
-        }
-        data=javaC();
-    }
-    else if(lang=="C++"){
-        function cppC(){
-            return "C++ compiler is running..."
-        }
-        data=cppC();
-    }
-    return data
-}
+// function setLanguage(lang="java"){
+//     let data;
+//     if(lang=="java"){
+//         function javaC(){
+//             return "java compiler is running..."
+//         }
+//         data=javaC();
+//     }
+//     else if(lang=="C++"){
+//         function cppC(){
+//             return "C++ compiler is running..."
+//         }
+//         data=cppC();
+//     }
+//     return data
+// }
 
-console.log(setLanguage("Python"))
+// console.log(setLanguage("Python"))
