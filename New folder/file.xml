@@ -1,0 +1,8 @@
+<!DOCTYPE student SYSTEM "file.dtd">
+<student>
+<s1 sid="A12" clg="abes" agn="">
+<name>Swasti</name>
+<branch>CSE</branch>
+<organization>ABES</organization>
+</s1>
+</student>

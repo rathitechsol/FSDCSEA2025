@@ -1,0 +1,14 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+<xs:element name="student">
+<xs:complexType>
+    <xs:sequence>
+        <element name="tns:st"></element>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="s1">
+    <xs:sequence>
+        <element></element>
+    </xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
