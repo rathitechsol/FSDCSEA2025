@@ -1,8 +1,0 @@
-<!ELEMENT student (s1)>
-<!ELEMENT s1 (name, branch, organization)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT branch (#PCDATA)>
-<!ELEMENT organization (#PCDATA)>
-<!ATTLIST s1 sid ID #REQUIRED>
-<!ATTLIST s1 clg CDATA #FIXED "abes">
-<!ATTLIST s1 agn CDATA #IMPLIED>
